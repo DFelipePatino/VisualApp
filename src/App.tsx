@@ -138,7 +138,7 @@ const tips = [
 
 const statusCopy: Record<'pending' | 'ready' | 'error', string> = {
   pending: 'Booting vision core…',
-  ready: 'Neon trace online',
+  ready: 'Cam online',
   error: 'Camera link failed'
 }
 
@@ -147,7 +147,7 @@ const FLOATING_TEXT_BASE_SIZE = 28
 type EffectKey = 'chromatic' | 'scanline' | 'vignette' | 'invert' | 'pixelate' | 'noise'
 
 const effectPresets: { key: EffectKey; label: string }[] = [
-  { key: 'chromatic', label: 'Chromatic shift' },
+  { key: 'chromatic', label: 'Remove Effects' },
   { key: 'scanline', label: 'Scanline pulse' },
   { key: 'vignette', label: 'Vignette bloom' },
   { key: 'invert', label: 'Inversion' },
@@ -572,21 +572,21 @@ function App() {
       <div className="glow-grid" aria-hidden />
       <header className="hero">
         <div>
-          <p className="eyebrow">neon vision suite</p>
+          <p className="eyebrow">Daniel Patino Project</p>
           <h1>
-            Cyberpunk <span>Silhouette Lab</span>
+            Cyberpunk <span>Cam</span>
           </h1>
           <p className="lede">
             Real-time edge detection, neon outlining, and glitch-inspired visuals built
             for futuristic performances, art installations, and playful self-expression.
           </p>
         </div>
-        <div className="hero-meta">
+        {/* <div className="hero-meta">
           <p className="meta-label">Pipeline</p>
           <p className="meta-value">GPU accelerated</p>
           <p className="meta-label">Effect</p>
           <p className="meta-value">Neon trace</p>
-        </div>
+        </div> */}
       </header>
 
       <main className="layout">
@@ -594,7 +594,7 @@ function App() {
           <div className="viewer-header">
             <div>
               <p className="eyebrow small">live feed</p>
-              <h2>Neon Silhouette</h2>
+              <h2>Enjoy</h2>
             </div>
             <span className={`status-pill status-${status}`}>
               <span className="status-dot" />

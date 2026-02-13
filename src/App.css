@@ -14,6 +14,8 @@
   min-height: 100vh;
   padding: clamp(1.5rem, 5vw, 4rem);
   overflow: hidden;
+  max-width: 1600px;
+  margin: 0 auto;
 }
 
 .glow-grid {
@@ -453,5 +455,17 @@
 
   .effect-grid {
     grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  }
+
+  .hero {
+    align-items: flex-start;
+  }
+
+  .control-column {
+    padding: 1rem;
+  }
+
+  .controls {
+    gap: 1rem;
   }
 }
